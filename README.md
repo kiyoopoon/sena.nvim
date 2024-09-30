@@ -16,5 +16,7 @@
 The leader key is `space`.
 |`Keybind`| `Action` |
 |--|--|
-| `leader + e` | `Opens neovim-tree [ file explorer ]` |
-| `leader + f` | `Focuses on neovim-tree if open otherwise opens and focuses` |
+| `Alt + e` | `Opens neovim-tree [ file explorer ]` |
+| `Alt + f` | `Focuses on neovim-tree if open otherwise opens and focuses` |
+
+I will add more keybind details and docs later.
