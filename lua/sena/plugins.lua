@@ -3,26 +3,33 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
     -- Packer can manage itself
     -- Mind blowjob I mean mind blowing job :skull:
-    use {'wbthomason/packer.nvim'}
+    use { 'wbthomason/packer.nvim' }
 
     -- Telescope for fuzzy finding
-    use {'nvim-lua/plenary.nvim'}
-    use {'nvim-telescope/telescope.nvim'}
-    use {'nvim-telescope/telescope-ui-select.nvim'}
+    use { 'nvim-lua/plenary.nvim' }
+    use { 'nvim-telescope/telescope.nvim' }
+    use { 'nvim-telescope/telescope-ui-select.nvim' }
 
     -- Treesitter for better syntax highlighting and code understanding
-    use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
+    use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+
+    -- LSP, autocomplete, autoformat, and linting
+    use {
+        "williamboman/mason.nvim",
+        "williamboman/mason-lspconfig.nvim",
+        "neovim/nvim-lspconfig",
+    }
 
     -- File explorer and UI
-    use {'kyazdani42/nvim-web-devicons'}
-    use {'nvim-lualine/lualine.nvim'}
-    use {'nvim-tree/nvim-tree.lua'}
-    use {'akinsho/bufferline.nvim'}
+    use { 'kyazdani42/nvim-web-devicons' }
+    use { 'nvim-lualine/lualine.nvim' }
+    use { 'nvim-tree/nvim-tree.lua' }
+    use { 'akinsho/bufferline.nvim' }
 
     -- Themes
-    use {'shatur/neovim-ayu'}
-    use {'catppuccin/nvim'}
-    use {'rebelot/kanagawa.nvim'}
+    use { 'shatur/neovim-ayu' }
+    use { 'catppuccin/nvim' }
+    use { 'rebelot/kanagawa.nvim' }
 
     -- Utility plugins
     use 'mbbill/undotree'
@@ -33,14 +40,14 @@ return require('packer').startup(function(use)
     }
 
     -- Git integration
-    use {'lewis6991/gitsigns.nvim'}
+    use { 'lewis6991/gitsigns.nvim' }
 
     -- Auto tag and pairs
-    use {'windwp/nvim-ts-autotag'}
-    use {'windwp/nvim-autopairs'}
+    use { 'windwp/nvim-ts-autotag' }
+    use { 'windwp/nvim-autopairs' }
 
     -- Color utilities
-    use {'norcalli/nvim-colorizer.lua'}
-    use {'numToStr/Comment.nvim'}
-    use {'ziontee113/color-picker.nvim'}
+    use { 'norcalli/nvim-colorizer.lua' }
+    use { 'numToStr/Comment.nvim' }
+    use { 'ziontee113/color-picker.nvim' }
 end)
