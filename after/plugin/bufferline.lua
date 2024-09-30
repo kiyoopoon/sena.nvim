@@ -1,15 +1,18 @@
 require("bufferline").setup {
     options = {
-        numbers = "none",
+        numbers = "ordinal",
+        unique_names = ":",
         diagnostics = "nvim_lsp",
-        show_buffer_close_icons = false,
-        show_close_icon = false,
+        show_buffer_close_icons = true,
+        show_close_icon = true,
+        separator_style = "slope",
         offsets = {
             {
                 filetype = "NvimTree",
                 text = "File Explorer",
+                text_align = "left",
                 highlight = "Directory",
-                separator = true
+                separator = true,
             }
         },
         diagnostics_indicator = function(count, level, diagnostics_dict, context)

@@ -27,9 +27,9 @@ vim.api.nvim_set_keymap('n', '<A-S-Tab>', ':BufferLineMovePrev<CR>',
                         {noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<A-Tab>', ':BufferLineMoveNext<CR>',
                         {noremap = true, silent = true})
-vim.api.nvim_set_keymap('n', '<C-Tab>', ':bnext<CR>',
+vim.api.nvim_set_keymap('n', '<C-n>', ':bnext<CR>',
                         {noremap = true, silent = true})
-vim.api.nvim_set_keymap('n', '<C-S-Tab>', ':bprev<CR>',
+vim.api.nvim_set_keymap('n', '<C-p>', ':bprev<CR>',
                         {noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<leader>c', ':bdelete<CR>',
                         {noremap = true, silent = true})
