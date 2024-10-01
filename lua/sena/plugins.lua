@@ -47,7 +47,10 @@ return require('packer').startup(function(use)
     use { 'windwp/nvim-autopairs' }
 
     -- Color utilities
-    use { 'norcalli/nvim-colorizer.lua' }
+    use {
+        'norcalli/nvim-colorizer.lua',
+        config = function() require('colorizer.lua').setup() end
+    }
     use { 'numToStr/Comment.nvim' }
     use { 'ziontee113/color-picker.nvim' }
 end)
