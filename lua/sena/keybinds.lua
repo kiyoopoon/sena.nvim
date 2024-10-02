@@ -17,22 +17,21 @@ end)
 -- Gitsigns keybinds are in the gitsigns.lua file.
 
 -- Nvimtree
-vim.api.nvim_set_keymap('n', '<A-e>', ':NvimTreeToggle<CR>',
-    { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<A-f>', ':NvimTreeFocus<CR>',
-    { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<A-f>", "<cmd>Neotree focus<cr>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<A-e>", "<cmd>Neotree toggle<cr>", { noremap = true, silent = true })
 
 -- Bufferline
-vim.api.nvim_set_keymap('n', '<A-S-Tab>', ':BufferLineMovePrev<CR>',
+vim.api.nvim_set_keymap('n', '<A-S-Tab>', ':BufferMovePrevious<CR>',
     { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<A-Tab>', ':BufferLineMoveNext<CR>',
+vim.api.nvim_set_keymap('n', '<A-Tab>', ':BufferMoveNext<CR>',
     { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<C-n>', ':bnext<CR>',
+vim.api.nvim_set_keymap('n', '<C-n>', ':BufferNext<CR>',
     { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<C-p>', ':bprev<CR>',
+vim.api.nvim_set_keymap('n', '<C-p>', ':BufferPrevious<CR>',
     { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<leader>c', ':bdelete<CR>',
+vim.api.nvim_set_keymap('n', '<leader>c', ':BufferClose<CR>',
     { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<A-p>', ':BufferPin<CR>', { noremap = true, silent = true })
 
 -- Undotree
 vim.keymap.set('n', '<leader>u', vim.cmd.UndotreeToggle)

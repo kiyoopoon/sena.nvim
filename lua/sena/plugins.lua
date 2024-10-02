@@ -23,8 +23,20 @@ return require('packer').startup(function(use)
     -- File explorer and UI
     use { 'kyazdani42/nvim-web-devicons' }
     use { 'nvim-lualine/lualine.nvim' }
-    use { 'nvim-tree/nvim-tree.lua' }
-    use { 'akinsho/bufferline.nvim' }
+    -- use { 'nvim-tree/nvim-tree.lua' }
+    use {
+        "nvim-neo-tree/neo-tree.nvim",
+        requires = {
+            "nvim-lua/plenary.nvim",
+            "nvim-tree/nvim-web-devicons",
+            "MunifTanjim/nui.nvim",
+            "3rd/image.nvim",
+            "s1n7ax/nvim-window-picker"
+        }
+    }
+
+    -- use { 'akinsho/bufferline.nvim' }
+    use { 'romgrk/barbar.nvim' }
 
     -- Themes
     use { 'shatur/neovim-ayu' }
