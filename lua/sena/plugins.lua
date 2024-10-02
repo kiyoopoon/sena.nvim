@@ -30,8 +30,32 @@ return require('packer').startup(function(use)
     use { 'shatur/neovim-ayu' }
     use { 'catppuccin/nvim' }
     use { 'rebelot/kanagawa.nvim' }
+    use 'RRethy/nvim-base16'
 
     -- Utility plugins
+    use {
+        'nvimdev/dashboard-nvim',
+        event = 'VimEnter',
+        config = function()
+            require('dashboard').setup {
+                theme = 'hyper',
+                config = {
+                    week_header = { enable = true },
+                    shortcut = {
+                        { desc = '󰊳 Update', group = '@property', action = 'Lazy update', key = 'u' },
+                        { desc = 'Files', group = 'Label', action = 'Telescope find_files', key = 'f' },
+                        { desc = 'Apps', group = 'DiagnosticHint', action = 'Telescope app', key = 'a' },
+                        { desc = 'Dotfiles', group = 'Number', action = 'Telescope dotfiles', key = 'd' },
+                    },
+                    project = { enable = true, limit = 8, action = 'Telescope find_files cwd=' },
+                    mru = { limit = 10, icon = '', label = 'Recent Files', cwd_only = false },
+                    footer = { 'The one and only editor for linux users' },
+                }
+            }
+        end,
+        requires = { 'nvim-tree/nvim-web-devicons' }
+    }
+
     use 'mbbill/undotree'
     use {
         'vyfor/cord.nvim',

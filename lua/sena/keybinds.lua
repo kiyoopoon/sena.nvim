@@ -45,5 +45,5 @@ comment.setup {
 }
 
 -- Color Picker
-vim.keymap.set("n", "<leader>w", "<cmd>PickColor<cr>", opts)
-vim.keymap.set("i", "<c-`>", "<cmd>PickColorInsert<cr>", opts)
+vim.keymap.set("n", "<leader>w", "<cmd>PickColor<cr>")
+vim.keymap.set("i", "<c-`>", "<cmd>PickColorInsert<cr>")
