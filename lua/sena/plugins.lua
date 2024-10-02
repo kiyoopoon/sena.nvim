@@ -36,7 +36,9 @@ return require('packer').startup(function(use)
     use {
         'vyfor/cord.nvim',
         run = './build || .\\build',
-        config = function() require('cord').setup() end
+        config = function()
+            require('cord').setup()
+        end
     }
 
     -- Git integration
@@ -47,10 +49,7 @@ return require('packer').startup(function(use)
     use { 'windwp/nvim-autopairs' }
 
     -- Color utilities
-    use {
-        'norcalli/nvim-colorizer.lua',
-        config = function() require('colorizer.lua').setup() end
-    }
+    use { 'norcalli/nvim-colorizer.lua', }
     use { 'numToStr/Comment.nvim' }
     use { 'ziontee113/color-picker.nvim' }
 end)

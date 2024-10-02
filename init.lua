@@ -18,3 +18,5 @@ vim.opt.linebreak = true
 vim.opt.termguicolors = true
 vim.cmd('set background=dark')
 vim.cmd('colorscheme kanagawa')
+
+require('colorizer').setup()

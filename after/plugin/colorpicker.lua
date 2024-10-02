@@ -1,7 +1,5 @@
-local opts = {noremap = true, silent = true}
-
 require("color-picker").setup({
-    ["icons"] = {"ﱢ", ""},
+    ["icons"] = { "ﱢ", "" },
     ["border"] = "rounded",
     ["keymap"] = {
         ["U"] = "<Plug>ColorPickerSlider5Decrease",
