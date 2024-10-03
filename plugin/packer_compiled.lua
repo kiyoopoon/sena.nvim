@@ -79,10 +79,25 @@ _G.packer_plugins = {
     path = "/home/kiyo/.local/share/nvim/site/pack/packer/start/Comment.nvim",
     url = "https://github.com/numToStr/Comment.nvim"
   },
+  LuaSnip = {
+    loaded = true,
+    path = "/home/kiyo/.local/share/nvim/site/pack/packer/start/LuaSnip",
+    url = "https://github.com/L3MON4D3/LuaSnip"
+  },
   ["barbar.nvim"] = {
     loaded = true,
     path = "/home/kiyo/.local/share/nvim/site/pack/packer/start/barbar.nvim",
     url = "https://github.com/romgrk/barbar.nvim"
+  },
+  ["cmp-nvim-lsp"] = {
+    loaded = true,
+    path = "/home/kiyo/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
+    url = "https://github.com/hrsh7th/cmp-nvim-lsp"
+  },
+  cmp_luasnip = {
+    loaded = true,
+    path = "/home/kiyo/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
+    url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
   ["color-picker.nvim"] = {
     loaded = true,
@@ -96,12 +111,17 @@ _G.packer_plugins = {
     url = "https://github.com/vyfor/cord.nvim"
   },
   ["dashboard-nvim"] = {
-    config = { "\27LJ\2\n�\5\0\0\6\0\19\0\0276\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\5\0005\4\4\0=\4\6\0034\4\5\0005\5\a\0>\5\1\0045\5\b\0>\5\2\0045\5\t\0>\5\3\0045\5\n\0>\5\4\4=\4\v\0035\4\f\0=\4\r\0035\4\14\0=\4\15\0035\4\16\0=\4\17\3=\3\18\2B\0\2\1K\0\1\0\vconfig\vfooter\1\2\0\0,The one and only editor for linux users\bmru\1\0\4\nlimit\3\n\ticon\b\rcwd_only\1\nlabel\17Recent Files\fproject\1\0\3\nlimit\3\b\venable\2\vaction\30Telescope find_files cwd=\rshortcut\1\0\4\vaction\23Telescope dotfiles\ngroup\vNumber\bkey\6d\tdesc\rDotfiles\1\0\4\vaction\18Telescope app\ngroup\19DiagnosticHint\bkey\6a\tdesc\tApps\1\0\4\vaction\25Telescope find_files\ngroup\nLabel\bkey\6f\tdesc\nFiles\1\0\4\vaction\16Lazy update\ngroup\14@property\bkey\6u\tdesc\16󰊳 Update\16week_header\1\0\5\vfooter\0\fproject\0\rshortcut\0\16week_header\0\bmru\0\1\0\1\venable\2\1\0\2\vconfig\0\ntheme\nhyper\nsetup\14dashboard\frequire\0" },
+    config = { "\27LJ\2\n�\5\0\0\6\0\19\0\0276\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\5\0005\4\4\0=\4\6\0034\4\5\0005\5\a\0>\5\1\0045\5\b\0>\5\2\0045\5\t\0>\5\3\0045\5\n\0>\5\4\4=\4\v\0035\4\f\0=\4\r\0035\4\14\0=\4\15\0035\4\16\0=\4\17\3=\3\18\2B\0\2\1K\0\1\0\vconfig\vfooter\1\2\0\0,The one and only editor for linux users\bmru\1\0\4\rcwd_only\1\nlabel\17Recent Files\nlimit\3\n\ticon\b\fproject\1\0\3\venable\2\vaction\30Telescope find_files cwd=\nlimit\3\b\rshortcut\1\0\4\tdesc\rDotfiles\vaction\23Telescope dotfiles\ngroup\vNumber\bkey\6d\1\0\4\tdesc\tApps\vaction\18Telescope app\ngroup\19DiagnosticHint\bkey\6a\1\0\4\tdesc\nFiles\vaction\25Telescope find_files\ngroup\nLabel\bkey\6f\1\0\4\tdesc\16󰊳 Update\vaction\16Lazy update\ngroup\14@property\bkey\6u\16week_header\1\0\5\bmru\0\vfooter\0\fproject\0\rshortcut\0\16week_header\0\1\0\1\venable\2\1\0\2\vconfig\0\ntheme\nhyper\nsetup\14dashboard\frequire\0" },
     loaded = false,
     needs_bufread = false,
     only_cond = false,
     path = "/home/kiyo/.local/share/nvim/site/pack/packer/opt/dashboard-nvim",
     url = "https://github.com/nvimdev/dashboard-nvim"
+  },
+  ["friendly-snippets"] = {
+    loaded = true,
+    path = "/home/kiyo/.local/share/nvim/site/pack/packer/start/friendly-snippets",
+    url = "https://github.com/rafamadriz/friendly-snippets"
   },
   ["gitsigns.nvim"] = {
     loaded = true,
@@ -143,6 +163,16 @@ _G.packer_plugins = {
     path = "/home/kiyo/.local/share/nvim/site/pack/packer/start/neovim-ayu",
     url = "https://github.com/shatur/neovim-ayu"
   },
+  ["none-ls-extras.nvim"] = {
+    loaded = true,
+    path = "/home/kiyo/.local/share/nvim/site/pack/packer/start/none-ls-extras.nvim",
+    url = "https://github.com/nvimtools/none-ls-extras.nvim"
+  },
+  ["none-ls.nvim"] = {
+    loaded = true,
+    path = "/home/kiyo/.local/share/nvim/site/pack/packer/start/none-ls.nvim",
+    url = "https://github.com/nvimtools/none-ls.nvim"
+  },
   ["nui.nvim"] = {
     loaded = true,
     path = "/home/kiyo/.local/share/nvim/site/pack/packer/start/nui.nvim",
@@ -162,6 +192,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/kiyo/.local/share/nvim/site/pack/packer/start/nvim-base16",
     url = "https://github.com/RRethy/nvim-base16"
+  },
+  ["nvim-cmp"] = {
+    loaded = true,
+    path = "/home/kiyo/.local/share/nvim/site/pack/packer/start/nvim-cmp",
+    url = "https://github.com/hrsh7th/nvim-cmp"
   },
   ["nvim-colorizer.lua"] = {
     loaded = true,
