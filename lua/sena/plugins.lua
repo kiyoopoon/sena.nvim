@@ -37,6 +37,13 @@ return require("packer").startup(function(use)
         },
     })
 
+    use({
+        "gelguy/wilder.nvim",
+        config = function()
+            -- config goes here
+        end,
+    })
+
     -- File explorer and UI
     use({ "kyazdani42/nvim-web-devicons" })
     use({ "nvim-lualine/lualine.nvim" })
@@ -94,6 +101,8 @@ return require("packer").startup(function(use)
             require("cord").setup()
         end,
     })
+
+    use("ellisonleao/carbon-now.nvim")
 
     -- Git integration
     use({ "lewis6991/gitsigns.nvim" })
