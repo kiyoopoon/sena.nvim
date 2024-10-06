@@ -116,7 +116,7 @@ _G.packer_plugins = {
     url = "https://github.com/vyfor/cord.nvim"
   },
   ["dashboard-nvim"] = {
-    config = { "\27LJ\2\n�\5\0\0\6\0\19\0\0276\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\5\0005\4\4\0=\4\6\0034\4\5\0005\5\a\0>\5\1\0045\5\b\0>\5\2\0045\5\t\0>\5\3\0045\5\n\0>\5\4\4=\4\v\0035\4\f\0=\4\r\0035\4\14\0=\4\15\0035\4\16\0=\4\17\3=\3\18\2B\0\2\1K\0\1\0\vconfig\vfooter\1\2\0\0,The one and only editor for linux users\bmru\1\0\4\rcwd_only\1\nlabel\17Recent Files\nlimit\3\n\ticon\b\fproject\1\0\3\venable\2\vaction\30Telescope find_files cwd=\nlimit\3\b\rshortcut\1\0\4\bkey\6d\ngroup\vNumber\vaction\23Telescope dotfiles\tdesc\rDotfiles\1\0\4\bkey\6a\ngroup\19DiagnosticHint\vaction\18Telescope app\tdesc\tApps\1\0\4\bkey\6f\ngroup\nLabel\vaction\25Telescope find_files\tdesc\nFiles\1\0\4\bkey\6u\ngroup\14@property\vaction\16Lazy update\tdesc\16󰊳 Update\16week_header\1\0\5\bmru\0\vfooter\0\fproject\0\rshortcut\0\16week_header\0\1\0\1\venable\2\1\0\2\vconfig\0\ntheme\nhyper\nsetup\14dashboard\frequire\0" },
+    config = { "\27LJ\2\n�\5\0\0\6\0\19\0\0276\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\5\0005\4\4\0=\4\6\0034\4\5\0005\5\a\0>\5\1\0045\5\b\0>\5\2\0045\5\t\0>\5\3\0045\5\n\0>\5\4\4=\4\v\0035\4\f\0=\4\r\0035\4\14\0=\4\15\0035\4\16\0=\4\17\3=\3\18\2B\0\2\1K\0\1\0\vconfig\vfooter\1\2\0\0,The one and only editor for linux users\bmru\1\0\4\nlabel\17Recent Files\nlimit\3\n\ticon\b\rcwd_only\1\fproject\1\0\3\nlimit\3\b\venable\2\vaction\30Telescope find_files cwd=\rshortcut\1\0\4\ngroup\vNumber\vaction\23Telescope dotfiles\tdesc\rDotfiles\bkey\6d\1\0\4\ngroup\19DiagnosticHint\vaction\18Telescope app\tdesc\tApps\bkey\6a\1\0\4\ngroup\nLabel\vaction\25Telescope find_files\tdesc\nFiles\bkey\6f\1\0\4\ngroup\14@property\vaction\16Lazy update\tdesc\16󰊳 Update\bkey\6u\16week_header\1\0\5\vfooter\0\fproject\0\rshortcut\0\16week_header\0\bmru\0\1\0\1\venable\2\1\0\2\ntheme\nhyper\vconfig\0\nsetup\14dashboard\frequire\0" },
     loaded = false,
     needs_bufread = false,
     only_cond = false,
@@ -137,6 +137,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/kiyo/.local/share/nvim/site/pack/packer/start/image.nvim",
     url = "https://github.com/3rd/image.nvim"
+  },
+  ["indent-blankline.nvim"] = {
+    loaded = true,
+    path = "/home/kiyo/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
+    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
   },
   ["kanagawa.nvim"] = {
     loaded = true,

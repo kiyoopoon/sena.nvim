@@ -94,6 +94,7 @@ return require("packer").startup(function(use)
     })
 
     use("mbbill/undotree")
+    use("lukas-reineke/indent-blankline.nvim")
     use({
         "vyfor/cord.nvim",
         run = "./build || .\\build",
