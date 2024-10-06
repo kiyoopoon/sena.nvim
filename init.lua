@@ -19,4 +19,6 @@ vim.opt.termguicolors = true
 vim.cmd("set background=dark")
 vim.cmd("colorscheme kanagawa")
 
+vim.cmd("set clipboard=unnamedplus")
+
 require("colorizer").setup()
