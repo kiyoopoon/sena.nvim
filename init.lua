@@ -22,3 +22,4 @@ vim.cmd("colorscheme kanagawa")
 vim.cmd("set clipboard=unnamedplus")
 
 require("colorizer").setup()
+require("ibl").setup()

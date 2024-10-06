@@ -84,6 +84,12 @@ _G.packer_plugins = {
     path = "/home/kiyo/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["alpha-nvim"] = {
+    config = { "\27LJ\2\na\0\0\5\0\5\0\n6\0\0\0'\2\1\0B\0\2\0029\0\2\0006\2\0\0'\4\3\0B\2\2\0029\2\4\2B\0\2\1K\0\1\0\vconfig\27alpha.themes.dashboard\nsetup\nalpha\frequire\0" },
+    loaded = true,
+    path = "/home/kiyo/.local/share/nvim/site/pack/packer/start/alpha-nvim",
+    url = "https://github.com/goolord/alpha-nvim"
+  },
   ["barbar.nvim"] = {
     loaded = true,
     path = "/home/kiyo/.local/share/nvim/site/pack/packer/start/barbar.nvim",
@@ -114,14 +120,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/kiyo/.local/share/nvim/site/pack/packer/start/cord.nvim",
     url = "https://github.com/vyfor/cord.nvim"
-  },
-  ["dashboard-nvim"] = {
-    config = { "\27LJ\2\n�\5\0\0\6\0\19\0\0276\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\5\0005\4\4\0=\4\6\0034\4\5\0005\5\a\0>\5\1\0045\5\b\0>\5\2\0045\5\t\0>\5\3\0045\5\n\0>\5\4\4=\4\v\0035\4\f\0=\4\r\0035\4\14\0=\4\15\0035\4\16\0=\4\17\3=\3\18\2B\0\2\1K\0\1\0\vconfig\vfooter\1\2\0\0,The one and only editor for linux users\bmru\1\0\4\nlabel\17Recent Files\nlimit\3\n\ticon\b\rcwd_only\1\fproject\1\0\3\nlimit\3\b\venable\2\vaction\30Telescope find_files cwd=\rshortcut\1\0\4\ngroup\vNumber\vaction\23Telescope dotfiles\tdesc\rDotfiles\bkey\6d\1\0\4\ngroup\19DiagnosticHint\vaction\18Telescope app\tdesc\tApps\bkey\6a\1\0\4\ngroup\nLabel\vaction\25Telescope find_files\tdesc\nFiles\bkey\6f\1\0\4\ngroup\14@property\vaction\16Lazy update\tdesc\16󰊳 Update\bkey\6u\16week_header\1\0\5\vfooter\0\fproject\0\rshortcut\0\16week_header\0\bmru\0\1\0\1\venable\2\1\0\2\ntheme\nhyper\vconfig\0\nsetup\14dashboard\frequire\0" },
-    loaded = false,
-    needs_bufread = false,
-    only_cond = false,
-    path = "/home/kiyo/.local/share/nvim/site/pack/packer/opt/dashboard-nvim",
-    url = "https://github.com/nvimdev/dashboard-nvim"
   },
   ["friendly-snippets"] = {
     loaded = true,
@@ -263,8 +261,12 @@ _G.packer_plugins = {
     path = "/home/kiyo/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
   },
+  ["vim-illuminate"] = {
+    loaded = true,
+    path = "/home/kiyo/.local/share/nvim/site/pack/packer/start/vim-illuminate",
+    url = "https://github.com/RRethy/vim-illuminate"
+  },
   ["wilder.nvim"] = {
-    config = { "\27LJ\2\n\v\0\0\1\0\0\0\1K\0\1\0\0" },
     loaded = true,
     path = "/home/kiyo/.local/share/nvim/site/pack/packer/start/wilder.nvim",
     url = "https://github.com/gelguy/wilder.nvim"
@@ -272,21 +274,14 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: alpha-nvim
+time([[Config for alpha-nvim]], true)
+try_loadstring("\27LJ\2\na\0\0\5\0\5\0\n6\0\0\0'\2\1\0B\0\2\0029\0\2\0006\2\0\0'\4\3\0B\2\2\0029\2\4\2B\0\2\1K\0\1\0\vconfig\27alpha.themes.dashboard\nsetup\nalpha\frequire\0", "config", "alpha-nvim")
+time([[Config for alpha-nvim]], false)
 -- Config for: cord.nvim
 time([[Config for cord.nvim]], true)
 try_loadstring("\27LJ\2\n2\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\tcord\frequire\0", "config", "cord.nvim")
 time([[Config for cord.nvim]], false)
--- Config for: wilder.nvim
-time([[Config for wilder.nvim]], true)
-try_loadstring("\27LJ\2\n\v\0\0\1\0\0\0\1K\0\1\0\0", "config", "wilder.nvim")
-time([[Config for wilder.nvim]], false)
-vim.cmd [[augroup packer_load_aucmds]]
-vim.cmd [[au!]]
-  -- Event lazy-loads
-time([[Defining lazy-load event autocommands]], true)
-vim.cmd [[au VimEnter * ++once lua require("packer.load")({'dashboard-nvim'}, { event = "VimEnter *" }, _G.packer_plugins)]]
-time([[Defining lazy-load event autocommands]], false)
-vim.cmd("augroup END")
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
