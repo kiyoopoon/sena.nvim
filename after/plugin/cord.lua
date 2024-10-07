@@ -1,5 +1,11 @@
 -- Replace your `~/.local/share/nvim/site/pack/packer/start/cord.nvim/lua/cord.lua` with this file
 
+-- Or just chnage these lines, cause IK it feels weird to copy paste files from the internet without reading
+--         image = "neovim_dark", [ My custom client image assest ID ]
+--         client = "1289291062086729739", [ My custom client ID with a better neovim icon ]
+--         tooltip = "The Superior Text Editor for Linux Users", [ The hover text ]
+--         show_cursor_position = true, [ Show the current line number and detailes that you are using ]
+
 -- local cord = {}
 --
 -- local ffi = require("ffi")
@@ -22,7 +28,7 @@
 --     display = {
 --         show_time = true,
 --         show_repository = true,
---         show_cursor_position = false,
+--         show_cursor_position = true,
 --         swap_fields = false,
 --         swap_icons = false,
 --         workspace_blacklist = {},
