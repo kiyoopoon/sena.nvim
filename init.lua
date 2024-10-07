@@ -15,6 +15,9 @@ vim.opt.autoindent = true
 vim.opt.wrap = true
 vim.opt.linebreak = true
 
+vim.opt.undodir = "undodir"
+vim.opt.undofile = true
+
 vim.opt.termguicolors = true
 vim.cmd("set background=dark")
 vim.cmd("colorscheme kanagawa")
