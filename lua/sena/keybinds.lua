@@ -17,6 +17,11 @@ end)
 -- LSP keybinds are in the lsp_config.lua file.
 -- Gitsigns keybinds are in the gitsigns.lua file.
 
+-- Out of the world shortcuts from the great timeprimeagen's configs
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+vim.keymap.set("n", "<leader>r", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+
 -- Nvimtree
 vim.api.nvim_set_keymap("n", "<A-f>", "<cmd>Neotree focus<cr>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<A-e>", "<cmd>Neotree toggle<cr>", { noremap = true, silent = true })
