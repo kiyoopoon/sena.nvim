@@ -20,6 +20,10 @@ lspconfig.rust_analyzer.setup({
     capabilities = capabilities,
 })
 
+lspconfig.emmet_language_server.setup({
+    capabilities = capabilities,
+})
+
 lspconfig.html.setup({
     capabilities = capabilities,
 })
