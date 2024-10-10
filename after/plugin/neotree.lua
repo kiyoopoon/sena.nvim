@@ -17,7 +17,7 @@ vim.fn.sign_define("DiagnosticSignHint", { text = "󰌵", texthl = "DiagnosticSi
 require("neo-tree").setup({
     window = {
         position = "left",
-        width = 30,
+        width = 31,
     },
 
     follow_current_file = {

@@ -20,7 +20,7 @@ vim.opt.undofile = true
 
 vim.opt.termguicolors = true
 vim.cmd("set background=dark")
-vim.cmd("colorscheme kanagawa")
+vim.cmd("colorscheme rose-pine")
 
 vim.cmd("set clipboard=unnamedplus")
 

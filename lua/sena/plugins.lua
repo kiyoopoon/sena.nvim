@@ -61,6 +61,7 @@ return require("packer").startup(function(use)
     use({ "catppuccin/nvim" })
     use({ "rebelot/kanagawa.nvim" })
     use("RRethy/nvim-base16")
+    use({ "rose-pine/neovim" })
 
     -- Dashboard
     use({
