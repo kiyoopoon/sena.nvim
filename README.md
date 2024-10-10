@@ -1,29 +1,63 @@
 # sena.nvim
+
 `sena.nvim` is my personal neovim setup for Python, Rust and Web development.
 Thanks to all the amazing open source contributors of neovim and all the plugins we used for making this bloated and dumb setup possible!
 
 ### Features of sena.nvim
-- Installing plugins using `packer`.
-- LSP for python, rust, html, css, javascript, typescript, lua are setup by default and you can add more easily.
-- Linting, auto-formatting, code suggestions setup.
-- Treesitter for better highlighting.
-- Gitsigns for showing git status and info.
-- Commenting and uncommenting keybinds.
-- Auto pairing, auto tag close and rename.
-- Color picker.
-- A nice theme also a nice theme picker.
+
+- Installing plugins using `packer.nvim`.
+- LSP for `python`, `rust`, `html`, `css`, `javascript`, `typescript`, `lua` are setup by default and you can add more easily.
+- `linting`, `auto-formatting`, code `suggestions` setup.
+- `telescope` for finding files easily and `treesitter` for better highlighting.
+- `neotree` for visual file exploration and `barbar` for buffer lines
+- `gitsigns` for showing git status and info.
+- `commenting` and `uncommenting` using keybinds.
+- auto `pairing`, auto tag `close` and `rename`.
+- Easy and fast navigation using `flash`
+- `color picker`.
+- A nice theme also a nice `theme picker`.
 
 ## Keybinds
+
 The leader key is `space`.
-|`Keybind`| `Action` |
-|--|--|
-| `Alt + e` | `Opens nvim-neo-tree [ file explorer ]` |
-| `Alt + f` | `Focuses on neovim-tree if open otherwise opens and focuses` |
+
+<table style="font-family: monospace">
+  <tr>
+    <th style="text-align: center;">Keybind</th>
+    <th style="text-align: center;">Action</th>
+  </tr>
+  <tr>
+    <td style="text-align: center;">Alt + e</td>
+    <td>Opens nvim-neo-tree [file explorer]</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">Alt + f</td>
+    <td>Focuses on nvim-neo-tree if open otherwise opens and focuses</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">leader + ff</td>
+    <td>Fuzzy find files using Telescope</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">Alt + gf</td>
+    <td>Fuzzy find files in your git tracked files</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">Alt + fw</td>
+    <td>Fuzzy find words in your current project directory</td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">Alt + f</td>
+    <td>Focuses on neovim-tree if open otherwise opens and focuses</td>
+  </tr>
+</table>
 
 I will add more keybind details and docs later.
 
 ## Simple yet handy stuffs
-### **Quick and Easy Code Sharing**  
+
+### **Quick and Easy Code Sharing**
+
 Want to share a beautiful snippet of your code? Here’s a fun little trick just for you!
 
 1. Enter **Visual Mode** by pressing `V` while in **Normal Mode**.

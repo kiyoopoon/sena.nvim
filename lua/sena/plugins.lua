@@ -79,6 +79,16 @@ return require("packer").startup(function(use)
 
     use({ "ellisonleao/carbon-now.nvim" })
 
+    -- Live markdown preview
+    use({
+        "iamcco/markdown-preview.nvim",
+        run = "cd app && npm install",
+        setup = function()
+            vim.g.mkdp_filetypes = { "markdown" }
+        end,
+        ft = { "markdown" },
+    })
+
     -- Discord RPC
     use({
         "vyfor/cord.nvim",
