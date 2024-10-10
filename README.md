@@ -23,36 +23,14 @@ Thanks to all the amazing open source contributors of neovim and all the plugins
 
 The leader key is `space`.
 
-<table style="font-family: monospace">
-  <tr>
-    <th style="text-align: center;">Keybind</th>
-    <th style="text-align: center;">Action</th>
-  </tr>
-  <tr>
-    <td style="text-align: center;">Alt + e</td>
-    <td>Opens nvim-neo-tree [file explorer]</td>
-  </tr>
-  <tr>
-    <td style="text-align: center;">Alt + f</td>
-    <td>Focuses on nvim-neo-tree if open otherwise opens and focuses</td>
-  </tr>
-  <tr>
-    <td style="text-align: center;">leader + ff</td>
-    <td>Fuzzy find files using Telescope</td>
-  </tr>
-  <tr>
-    <td style="text-align: center;">Alt + gf</td>
-    <td>Fuzzy find files in your git tracked files</td>
-  </tr>
-  <tr>
-    <td style="text-align: center;">Alt + fw</td>
-    <td>Fuzzy find words in your current project directory</td>
-  </tr>
-  <tr>
-    <td style="text-align: center;">Alt + f</td>
-    <td>Focuses on neovim-tree if open otherwise opens and focuses</td>
-  </tr>
-</table>
+|   `Keybind`   | `Action`                                                       |
+| :-----------: | -------------------------------------------------------------- |
+|   `Alt + e`   | `Opens nvim-neo-tree [file explorer]`                          |
+|   `Alt + f`   | `Focuses on nvim-neo-tree if open otherwise opens and focuses` |
+| `leader + ff` | `Fuzzy find files using Telescope`                             |
+|  `Alt + gf`   | `Fuzzy find files in your git tracked files`                   |
+|  `Alt + fw`   | `Fuzzy find words in your current project directory`           |
+|   `Alt + f`   | `Focuses on nvim-tree if open otherwise opens and focuses`     |
 
 I will add more keybind details and docs later.
 
