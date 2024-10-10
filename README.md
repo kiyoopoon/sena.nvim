@@ -3,6 +3,8 @@
 `sena.nvim` is my personal neovim setup for Python, Rust and Web development.
 Thanks to all the amazing open source contributors of neovim and all the plugins we used for making this bloated and dumb setup possible!
 
+![image](https://github.com/user-attachments/assets/6abc14f2-99ca-46e2-84b4-bc410c85de7a)
+
 ### Features of sena.nvim
 
 - Installing plugins using `packer.nvim`.
