@@ -6,6 +6,15 @@ vim.api.nvim_set_keymap("n", "<A-j>", "<C-w>j", { noremap = true, silent = true 
 vim.api.nvim_set_keymap("n", "<A-k>", "<C-w>k", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<A-l>", "<C-w>l", { noremap = true, silent = true })
 
+-- Stop neovim from yaking [ copying ] when deleting. If I am deleting something why would I want to copy it JUST WHYYYYY. Maybe you like but I don't, you can change it to `<leader>d` if you still want that default delete
+-- Map 'd' to delete into the black hole register, so it won't affect our clipboard
+vim.keymap.set("n", "d", '"_d', { noremap = true })
+vim.keymap.set("n", "D", '"_D', { noremap = true })
+vim.keymap.set("v", "d", '"_d', { noremap = true })
+-- Map 'c' to change without yanking to clipboard
+vim.keymap.set("n", "c", '"_c', { noremap = true })
+vim.keymap.set("v", "c", '"_c', { noremap = true })
+
 -- Telescope
 local builtin = require("telescope.builtin")
 vim.keymap.set("n", "<leader>ff", builtin.find_files, {})
