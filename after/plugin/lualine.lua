@@ -6,17 +6,17 @@ local lualine = require("lualine")
 -- Color table for highlights
 -- stylua: ignore
 local colors = {
-    bg       = '#202328',
-    fg       = '#bbc2cf',
+    bg       = '#26233a',
+    fg       = '#e0def4',
     yellow   = '#ECBE7B',
     cyan     = '#008080',
     darkblue = '#081633',
-    green    = '#98be65',
-    orange   = '#FF8800',
+    green    = '#95b1ac',
+    orange   = '#ebbcba',
     violet   = '#a9a1e1',
-    magenta  = '#c678dd',
-    blue     = '#51afef',
-    red      = '#ec5f67',
+    magenta  = '#c4a7e7',
+    blue     = '#31748f',
+    red      = '#eb6f92',
 }
 
 local conditions = {
@@ -88,6 +88,7 @@ ins_left({
 
 ins_left({
     -- mode component
+    -- I kinda like this bsd icon so not gona change it
     function()
         return ""
     end,

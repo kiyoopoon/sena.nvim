@@ -7,6 +7,8 @@ Thanks to all the amazing open source contributors of neovim and all the plugins
 
 ### Features of sena.nvim
 
+- First of all before everything we have a custom live share plugin not a full working plugin BUT it's still a custom script that has some pretty good live server stuffs ( basic things needed for live server ), you can now close and manage currently open live server ports using `telescope` window.
+
 - Installing plugins using `packer.nvim`.
 - LSP for `python`, `rust`, `html`, `css`, `javascript`, `typescript`, `lua` are setup by default and you can add more easily.
 - `linting`, `auto-formatting`, code `suggestions` setup.
@@ -31,6 +33,8 @@ The leader key is `space`.
 |  `Alt + gf`   | `Fuzzy find files in your git tracked files`                   |
 |  `Alt + fw`   | `Fuzzy find words in your current project directory`           |
 |   `Alt + f`   | `Focuses on nvim-tree if open otherwise opens and focuses`     |
+| `leader + ll` | `Focuses on nvim-tree if open otherwise opens and focuses`     |
+| `leader + ls` | `Start a live server preview in your default browser`          |
 
 I will add more keybind details and docs later.
 
