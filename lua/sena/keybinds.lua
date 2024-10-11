@@ -23,6 +23,20 @@ vim.keymap.set("n", "<leader>fw", function()
     builtin.grep_string({ search = vim.fn.input("Search: ") })
 end)
 
+-- Manage our own written live server manager plugin [ kind of a plugin YES ]
+vim.api.nvim_set_keymap(
+    "n",
+    "<leader>ll",
+    ':lua require("sena.scripts.manage_live_server").list_live_servers()<CR>',
+    { noremap = true, silent = true }
+)
+vim.keymap.set(
+    "n",
+    "<leader>ls",
+    ':lua require("sena.scripts.start_live_server").start_or_open_live_server()<CR>',
+    { noremap = true, silent = true }
+)
+
 -- LSP keybinds are in the lsp_config.lua file.
 -- Gitsigns keybinds are in the gitsigns.lua file.
 
