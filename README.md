@@ -7,6 +7,9 @@ Thanks to all the amazing open source contributors of neovim and all the plugins
 
 ### Features of sena.nvim
 
+> [!WARNING]
+> The image support only works on unix like system with kitty terminal and imagemagic installed. I will add cross platform support soon.
+
 - First of all before everything we have a custom live share plugin not a full working plugin BUT it's still a custom script that has some pretty good live server stuffs ( basic things needed for live server ), you can now close and manage currently open live server ports using `telescope` window.
 
 - Installing plugins using `packer.nvim`.
