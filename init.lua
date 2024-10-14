@@ -15,6 +15,9 @@ vim.opt.autoindent = true
 vim.opt.wrap = true
 vim.opt.linebreak = true
 
+vim.opt.autoread = true
+vim.opt.swapfile = false
+
 vim.opt.undodir = os.getenv("HOME") .. "/.nvim/undodir"
 vim.opt.undofile = true
 
