@@ -24,7 +24,7 @@ vim.keymap.set("n", "<leader>fw", function()
 end)
 
 -- Manage our own written live server manager plugin [ kind of a plugin YES ]
-vim.api.nvim_set_keymap(
+vim.keymap.set(
     "n",
     "<leader>ll",
     ':lua require("sena.scripts.manage_live_server").list_live_servers()<CR>',
