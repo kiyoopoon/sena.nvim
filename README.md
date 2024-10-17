@@ -30,7 +30,7 @@ Thanks to all the amazing open source contributors of neovim and all the plugins
 ### File Exploration
 
 - Neovim-Neo-Tree for visual file exploration
-- Bufferline for buffer management
+- BarBar ( bufferline ) for buffer management
 
 ### Git Integration
 
@@ -48,11 +48,11 @@ Thanks to all the amazing open source contributors of neovim and all the plugins
 
 - Custom theme (Rose Pine) with theme picker support
 - Lualine for a customizable status line
-- Bufferline for buffer management
+- BarBar ( bufferline ) for buffer management
 
 ### Performance
 
-- Optimized for speed and responsiveness
+- The perfomance might be slow, cause we are currently not lazy loading plugins and there are a lot of plugins cause it's a bloated setup.
 
 ## Keybinds
 
@@ -136,7 +136,7 @@ The leader key is set to `<space>`.
 | Keybind     | Action              |
 | ----------- | ------------------- |
 | `<leader>w` | Pick color          |
-| `<c-``      | Insert picked color |
+| ``<c-` ``   | Insert picked color |
 
 ### Flash
 
