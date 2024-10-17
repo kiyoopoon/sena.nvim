@@ -5,7 +5,8 @@ Thanks to all the amazing open source contributors of neovim and all the plugins
 
 ## Features
 
-![image](https://ibb.co.com/bb2k4Q1)
+![20241017155410_1](https://github.com/user-attachments/assets/e6b74511-7113-42ff-aadb-c90ce297b769)
+
 
 > [!WARNING]
 > The image support only works on unix like system with kitty terminal and imagemagic installed. I will add cross platform support soon.
