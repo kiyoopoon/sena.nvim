@@ -60,7 +60,7 @@ return require("packer").startup(function(use)
     use({ "shatur/neovim-ayu" })
     use({ "catppuccin/nvim" })
     use({ "rebelot/kanagawa.nvim" })
-    use("RRethy/nvim-base16")
+    use({ "RRethy/nvim-base16" })
     use({ "rose-pine/neovim" })
 
     -- Dashboard
@@ -79,6 +79,8 @@ return require("packer").startup(function(use)
     use({ "RRethy/vim-illuminate" })
 
     use({ "ellisonleao/carbon-now.nvim" })
+
+    use({ "zaldih/themery.nvim" })
 
     -- Live markdown preview
     use({
