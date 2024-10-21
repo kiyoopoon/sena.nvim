@@ -71,6 +71,9 @@ comment.setup({
 vim.keymap.set("n", "<leader>mp", ":MarkdownPreview<CR>")
 vim.keymap.set("n", "<leader>mps", ":MarkdownPreviewStop<CR>")
 
+-- Theme Picker
+vim.keymap.set("n", "<leader>th", ":Themery<CR>")
+
 -- Color Picker
 vim.keymap.set("n", "<leader>w", "<cmd>PickColor<cr>")
 vim.keymap.set("i", "<c-`>", "<cmd>PickColorInsert<cr>")
