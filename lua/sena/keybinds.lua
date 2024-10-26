@@ -1,5 +1,7 @@
 vim.g.mapleader = " "
 
+vim.keymap.set("n", "<leader>dt", ":botright 20sp term://kitty<CR>", { noremap = true })
+
 -- Window focusing
 vim.keymap.set("n", "<A-h>", "<C-w>h", { noremap = true, silent = true })
 vim.keymap.set("n", "<A-j>", "<C-w>j", { noremap = true, silent = true })
