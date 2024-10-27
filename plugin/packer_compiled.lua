@@ -95,11 +95,6 @@ _G.packer_plugins = {
     path = "/home/kiyo/.local/share/nvim/site/pack/packer/start/barbar.nvim",
     url = "https://github.com/romgrk/barbar.nvim"
   },
-  ["betterTerm.nvim"] = {
-    loaded = true,
-    path = "/home/kiyo/.local/share/nvim/site/pack/packer/start/betterTerm.nvim",
-    url = "https://github.com/CRAG666/betterTerm.nvim"
-  },
   ["carbon-now.nvim"] = {
     loaded = true,
     path = "/home/kiyo/.local/share/nvim/site/pack/packer/start/carbon-now.nvim",

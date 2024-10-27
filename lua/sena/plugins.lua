@@ -72,7 +72,7 @@ return require("packer").startup(function(use)
     })
 
     -- Utility plugins
-    use({ "CRAG666/betterTerm.nvim" })
+    -- use({ "CRAG666/betterTerm.nvim" })
 
     use({ "folke/flash.nvim" })
 
