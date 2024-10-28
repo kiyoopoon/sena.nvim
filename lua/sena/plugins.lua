@@ -73,7 +73,13 @@ return require("packer").startup(function(use)
 
     -- Utility plugins
     -- use({ "CRAG666/betterTerm.nvim" })
-
+    use({
+        "kylechui/nvim-surround",
+        tag = "*",
+        config = function()
+            require("nvim-surround").setup({})
+        end,
+    })
     use({ "folke/flash.nvim" })
 
     use({ "mbbill/undotree" })
