@@ -1,7 +1,5 @@
 vim.g.mapleader = " "
 
-vim.keymap.set("n", "<leader>dt", ":botright 20sp term://kitty<CR>", { noremap = true })
-
 -- Window focusing
 vim.keymap.set("n", "<A-h>", "<C-w>h", { noremap = true, silent = true })
 vim.keymap.set("n", "<A-j>", "<C-w>j", { noremap = true, silent = true })
@@ -65,17 +63,25 @@ vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
 -- Comment
 local comment = require("Comment")
 comment.setup({
-    toggler = { line = "<leader>cc", block = "<leader>cu" },
-    opleader = { line = "<leader>cc", block = "<leader>cu" },
+    toggler = {
+        line = "<leader>cc",
+        block = "<leader>cu",
+        { noremap = true, silent = true },
+    },
+    opleader = {
+        line = "<leader>cc",
+        block = "<leader>cu",
+        { noremap = true, silent = true },
+    },
 })
 
 -- Markdown previews
-vim.keymap.set("n", "<leader>mp", ":MarkdownPreview<CR>")
-vim.keymap.set("n", "<leader>mps", ":MarkdownPreviewStop<CR>")
+vim.keymap.set("n", "<leader>mp", ":MarkdownPreview<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>mps", ":MarkdownPreviewStop<CR>", { noremap = true, silent = true })
 
 -- Theme Picker
-vim.keymap.set("n", "<leader>th", ":Themery<CR>")
+vim.keymap.set("n", "<leader>th", ":Themery<CR>", { noremap = true, silent = true })
 
 -- Color Picker
-vim.keymap.set("n", "<leader>w", "<cmd>PickColor<cr>")
-vim.keymap.set("i", "<c-`>", "<cmd>PickColorInsert<cr>")
+vim.keymap.set("n", "<leader>w", "<cmd>PickColor<cr>", { noremap = true, silent = true })
+vim.keymap.set("i", "<c-`>", "<cmd>PickColorInsert<cr>", { noremap = true, silent = true })
