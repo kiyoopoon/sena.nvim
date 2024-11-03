@@ -119,5 +119,5 @@ return require("packer").startup(function(use)
     -- Color utilities
     use({ "norcalli/nvim-colorizer.lua" })
     use({ "numToStr/Comment.nvim" })
-    use({ "ziontee113/color-picker.nvim" })
+    -- use({ "ziontee113/color-picker.nvim" })
 end)
