@@ -7,7 +7,6 @@ Thanks to all the amazing open source contributors of neovim and all the plugins
 
 ![20241017155410_1](https://github.com/user-attachments/assets/e6b74511-7113-42ff-aadb-c90ce297b769)
 
-
 > [!WARNING]
 > The image support only works on unix like system with kitty terminal and imagemagic installed. I will add cross platform support soon.
 
@@ -167,23 +166,55 @@ Want to share a beautiful snippet of your code? Here's a fun little trick:
 
 Thanks to `https://carbon.now.sh/` and `ellisonleao/carbon-now.nvim` for making this possible ;)
 
-## Installation
+## Installation Instructions
 
-1. Clone the repository:
+To set up `sena.nvim`, follow these steps:
 
-   ```
+1. **Clone the Repository**:
+   ```bash
    git clone https://github.com/yourusername/sena.nvim.git ~/.config/nvim
    ```
 
-2. Install Packer:
-
-   ```
-   git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+2. **Install Packer**:
+   ```bash
+   git clone --depth 1 https://github.com/wbthomason/packer.nvim \
      ~/.local/share/nvim/site/pack/packer/start/packer.nvim
    ```
 
-3. Start Neovim and run `:PackerSync` to install all plugins.
-   The configuration is split into several files for better organization:
+3. **Install Plugins**:
+   Launch Neovim and execute the command:
+   ```
+   :PackerSync
+   ```
+   This will install all the necessary plugins. The configuration is organized into multiple files for better maintainability.
+
+4. **Additional Dependencies**:
+   You will need to install the following tools:
+   - `black` (Python code formatter)
+   - `isort` (Python import sorter)
+   - `prettier` (Code formatter for various languages)
+
+   For image support, ensure you have the Lua Magick module and the ImageMagick package installed. If you're using Arch Linux ( I use Arch BTW ), you can install these from the official repository. For other distributions, you can typically find them in your package manager or install them manually if needed.
+
+## Arch Linux Installation Guide
+
+To install the required tools on Arch Linux, use the following commands:
+
+- For `prettier`:
+  ```bash
+  npm install -g prettier
+  ```
+
+- For `black` and `isort`:
+  ```bash
+  sudo pacman -S python-black python-isort
+  ```
+
+- For `imagemagick`:
+  ```bash
+  sudo pacman -S imagemagick
+  ```
+  Additionally, install LuaRocks and use it to install the `imagemagick` Lua module.
 
 ## Contributing
 
