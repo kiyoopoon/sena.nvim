@@ -172,7 +172,7 @@ Thanks to `https://carbon.now.sh/` and `ellisonleao/carbon-now.nvim` for making 
 1. Clone the repository:
 
    ```
-   git clone https://github.com/yourusername/sena.nvim.git ~/.config/nvim
+   git clone https://github.com/kiyoopoon/sena.nvim.git ~/.config/nvim
    ```
 
 2. Install Packer:
