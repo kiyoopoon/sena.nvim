@@ -171,11 +171,13 @@ Thanks to `https://carbon.now.sh/` and `ellisonleao/carbon-now.nvim` for making 
 To set up `sena.nvim`, follow these steps:
 
 1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/yourusername/sena.nvim.git ~/.config/nvim
+
+   ```
+   git clone https://github.com/kiyoopoon/sena.nvim.git ~/.config/nvim
    ```
 
 2. **Install Packer**:
+
    ```bash
    git clone --depth 1 https://github.com/wbthomason/packer.nvim \
      ~/.local/share/nvim/site/pack/packer/start/packer.nvim
@@ -183,13 +185,16 @@ To set up `sena.nvim`, follow these steps:
 
 3. **Install Plugins**:
    Launch Neovim and execute the command:
+
    ```
    :PackerSync
    ```
+
    This will install all the necessary plugins. The configuration is organized into multiple files for better maintainability.
 
 4. **Additional Dependencies**:
    You will need to install the following tools:
+
    - `black` (Python code formatter)
    - `isort` (Python import sorter)
    - `prettier` (Code formatter for various languages)
@@ -201,11 +206,13 @@ To set up `sena.nvim`, follow these steps:
 To install the required tools on Arch Linux, use the following commands:
 
 - For `prettier`:
+
   ```bash
   npm install -g prettier
   ```
 
 - For `black` and `isort`:
+
   ```bash
   sudo pacman -S python-black python-isort
   ```
